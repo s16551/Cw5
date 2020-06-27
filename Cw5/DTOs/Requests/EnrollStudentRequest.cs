@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cw3.Models
+namespace Cw5.DTOs.Requests
 {
-    public class Student
+    public class EnrollStudentRequest
     {
         public string IndexNumber { get; set; }
         public string FirstName { get; set; }
-        public string  LastName { get; set; }
+        public string LastName { get; set; }
 
         public DateTime Birthdate { get; set; }
 
         public string Studies { get; set; }
-        public int Semester { get; set; }
     }
 }
