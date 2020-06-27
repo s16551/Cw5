@@ -13,9 +13,10 @@ namespace Cw5.Controllers
     [ApiController]
     public class EnrollmentsController : ControllerBase
     {
-        public IActionResult EnrollStudent(EnrollStudentRequest newStudent)
+        public IActionResult EnrollStudent(EnrollStudentRequest request)
         {
-
+            var st = new Student();
+            st.FirstName = request
 
             return Ok();
         }
